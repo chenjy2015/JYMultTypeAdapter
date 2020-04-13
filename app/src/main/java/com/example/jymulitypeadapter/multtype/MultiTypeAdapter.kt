@@ -112,8 +112,8 @@ class MultiTypeAdapter @JvmOverloads constructor(
         val index = types.firstIndexOf(item.javaClass)
         if (index != -1) {
             val linker = types.getType<Any>(index).linker
-//            return index + linker.index(position, item)
-            return linker.index(position, item)
+            return index + linker.index(position, item)//此方法不可更改为下列方法 否则计算会有错误
+//            return linker.index(position, item) //此方法在同事注册多个类型的时候会出问题
         }
         throw BinderNotFoundException(item.javaClass)
     }
