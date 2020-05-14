@@ -3,6 +3,8 @@ package com.example.jymulitypeadapter
 import android.annotation.SuppressLint
 import android.widget.Toast
 import com.example.jymulitypeadapter.databinding.BinderTextBinding
+import com.example.mulitypeadapter.BaseItemViewBinder
+import com.example.mulitypeadapter.BaseViewHolder
 
 class TextBinder : BaseItemViewBinder<TextInfo, BinderTextBinding>() {
     override fun getLayoutId(): Int {

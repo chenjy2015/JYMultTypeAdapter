@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.jymulitypeadapter.databinding.BinderText3Binding
+import com.example.mulitypeadapter.BaseItemViewBinder
+import com.example.mulitypeadapter.BaseViewHolder
 
 class TextBinder3 : BaseItemViewBinder<TextInfo, BinderText3Binding>() {
     override fun getLayoutId(): Int {

@@ -3,6 +3,8 @@ package com.example.jymulitypeadapter
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.jymulitypeadapter.databinding.BinderImgBinding
+import com.example.mulitypeadapter.BaseItemViewBinder
+import com.example.mulitypeadapter.BaseViewHolder
 
 class ImgBinder : BaseItemViewBinder<ImgInfo, BinderImgBinding>() {
     override fun getLayoutId(): Int {
